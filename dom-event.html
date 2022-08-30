@@ -1,0 +1,220 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <style>
+            #maincontainer{
+                margin-bottom: 40px;
+            }
+            #jumbo{
+                margin-top: 30px;
+
+            }
+            button{
+                margin-left: 10px;
+            }
+            h3{
+                background: #eee;
+                color: inherit;
+                width: 500px;
+                height: 45px;
+                padding:10px;
+                border-radius: 10px;
+            }
+            #form1{
+                width: 400px;
+            }
+            #outputvalue{
+                width: 200px;
+            }
+            #blog{
+                background: #eee;
+                border: 3px solid gray;
+                padding-top: 20px;
+                border-radius: 10px;
+            }
+            #hideDiv{
+                border: 3px solid gray;
+                border-radius: 10px;
+                padding-left: 30px;
+                width: 400px;
+                margin: 10px;
+            }
+            #selectFrom{
+                width: 200px;
+            }
+        </style>
+    </head>
+        <body onload ="">
+            <div id="maincontainer" class="container">
+                <div class="jumbotron" id="jumbo">
+                    <h1>DOM AND EVENTS EXERCISE</h1>
+                    <p>Hello,here you can find various example of <strong>JAVASCRIPT</strong>DOM EVENTS</p>
+                </div>
+                <form>
+                    <div id="form1" class="form-group">
+                        <h3>Question 1</h3>
+                        <label for="inputvalue" Enter Fahrenheit Value></label>
+                        <input type="text" name="f" class="form-control" id="inputvalue" placeholder="Fahrenheit value" onInput="Fahrenheit()"><br>
+
+                       <label for="outputvalue">Celcius</label>
+                       <output id="outputevalue" name="c" class="form-control" for="inputValue"></output>
+                    </div>
+                </form>
+                    <h3> Question 2</h3>
+                    <h2> My BLOG</h2>
+                    <div id="blog" class="row">
+                        <div class="col-sm-5">
+                            <div class="thumbnail">
+                                <img src="image2.jpg">
+                            </div>
+                            <div class="col-sm-40">
+                                <p>Following the huge success of its first ever digital edition in 2020, Tomorrowland brought back the spectacular two-day digital music festival experience on July 16 & 17, 2021, welcoming the most spectacular group of entertainers in the universe The Amicorum Spectaculum’. The magnificent second edition of Tomorrowland  Around the World was adapted to all time zones and brought together a stellar line-up featuring more than 40 of the planet’s biggest names in electronic dance music, while the People of Tomorrow from all corners of the globe united again as one in one place celebrating the spectacle of friendship.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3> Question 3 & 4 </h3>
+                    <div id="hidediv">
+                        <h2>this is 1st HTML tag</h2>
+                        <h4>one more Html tag</h4>
+                        <div class="row">
+                            <div class="col-sm-10">
+                                <div class="thumbnail">
+                                    <img src="image3.jpg">
+                                </div>
+                            </div>
+                        </div>
+                        <p>This is pragraph tag</p>
+                        <button type="button" class="btn btn-danger">Button</button><br><br>
+                    </div>
+                    <input type="submit" class="btn btn-info" value="Hide tag" onClick="hide()">
+                    <input type="submit" class="btn btn-info" value="Show tag" onClock="show()">
+
+                    <h3>Question 5</h3>
+                    <ul id="over_out">
+                        <li>Orange</li>
+                        <li>Mango</li>
+                        <li>Banana</li>
+                        <li>Apple</li>
+                    </ul>
+                    <input id="inputButton" class="btn btn-warning" type="button" value="Mouseover me!" onmouseover="mouseOver()" onmouseout = " mouseOut()">
+
+                    <h3>Question 7</h3>
+                    <form name="CheckForm">
+                        <input type="checkbox" name="check-list" value="checkbox 1">box1<br>
+                        <input type="checkbox" name="check-list" value="checkbox 2">box2<br>
+                        <input type="checkbox" name="check-list" value="checkbox 3">box3<br>
+                        <input type="checkbox" name="check-list" value="checkbox 4">box4<br>
+                        <input type="checkbox" name="check-list" value="checkbox 5">box5<br>
+                        <input type="checkbox" name="check-list" value="checkbox 6">box6<br>
+                        <input type="checkbox" name="check-list" value="checkbox 7">box7<br>
+                        <input type="checkbox" name="check-list" value="checkbox 8">box8<br>
+                        <input type="checkbox" name="check-list" value="checkbox 9">box9<br>
+                        <input type="checkbox" name="check-list" value="checkbox 10">box10<br>
+
+                        <input type="button" class="btn btn-success" name="selectAll" value="SELECT ALL" onClick="checkAll()">
+                        <input type="button" class="btn btn-success" name="" value="UNSELECT ALL" onClick="UncheckAll()">
+                    </form>
+
+                    <h3>Question 8</h3>
+                        <form id="selectForm">
+                            <select id="State" name="selectOption" class="form-control">
+                                <option value="">Select State</option>
+                                <option value="1">Delhi</option>
+                                <option value="2">Gujarat</option>
+                                <option value="3">Kolkata</option>
+                                <option value="4">Odisa</option>
+                            </select><br>
+
+                            <select id="name" name="selectOption" class="form-control">
+                                <option value="">Select Name</option>
+                                <option value="1">Mit</option>
+                                <option value="2">Trushang</option>
+                                <option value="3">Soham</option>
+                                <option value="4">Priyank</option>
+                            </select><br>
+
+                            <select id="fruit" name="selectOption" class="form-control">
+                                <option value="">Select Fruit</option>
+                                <option value="1">Mango</option>
+                                <option value="2">Banana</option>
+                                <option value="3">Orange</option>
+                                <option value="4">Grapes</option>
+                            </select><br>
+
+                            <select id="car" name="selectOption" class="form-control">
+                                <option value="">Select Car</option>
+                                <option value="1">BMW</option>
+                                <option value="2">Mercedes</option>
+                                <option value="3">bentley</option>
+                                <option value="4">Ferrari</option>
+                            </select><br>
+
+                            <select id="City" name="selectOption" class="form-control">
+                                <option value="">Select City</option>
+                                <option value="1">Ahmedabad</option>
+                                <option value="2">Surat</option>
+                                <option value="3">Rajkot</option>
+                                <option value="4">Jamnagar</option>
+                            </select><br>
+                            <input type="button" class="btn btn-danger" onClick="validate()" value="Validate">
+                        </form>
+
+                    <h3>Question 9</h3>
+                    <div class = "row">
+                        <div id="formDiv" class="col-sm-6">
+                            <form id="myForm">
+                                <div id="firstForm" class="form-group">
+                                    <label for="firstName">First Name</label>
+                                    <input id="firstName" class="form-control" type="text" name="fname" placeholder="First Name"><br>
+            
+                                    <label for="lastName">Last Name</label>
+                                    <input id="lastName" class="form-control" type="text" name="lname" placeholder="Last Name"><br>
+            
+                                    <input id="maleId" type="radio" name="gender" value="Male"> Male
+                                    <input id="femaleId" type="radio" name="gender" value="Female"> Female <br><br>
+            
+                                    <label for="state">State</label>
+                                    <select id="state" class="form-control">
+                                        <option value="">Select State</option>
+                                        <option value="1">New Jersey</option>
+                                        <option value="2">New York</option>
+                                        <option value="3">Pennysilvenia</option>
+                                        <option value="4">California</option>
+                                    </select><br>
+            
+                                    <input  type="button" class="btn btn-success" name="saveButton" value="Save" onClick="showvalue()">
+            
+                                </div>
+                            </form>
+                        </div>
+                        <div id="viewDiv" class="col-sm-6">
+                            <p id="p1"></p>
+                            <p id="p2"></p>
+                            <p id="p3"></p>
+                            <p id="p4"></p>
+                            <input id="edit" type="button" class="btn btn-success" name="editButton" value="Edit" onClick="showform()">
+                        </div>
+                    </div>
+                                    
+                    <div>
+                        <h3>Question 10</h3>
+                        <h4>*** Our menu ***</h4>
+                        <ol>
+                                <li>pasta</li>
+                                <li>pizza</li>
+                                <li>Panner butter masala</li>
+                                <li>Cheese Butter masala</li>
+                                <li>Pau bhaji</li>
+                        </ol>
+
+                        <p id="day"></p>
+                        <p id="special-dish"></p>
+                                        
+                        <input type="button" class="btn btn-primary" value="Show me today Special" onClick="md2()">
+
+                    </div>         
+            </div>
+        </body>
+        <script type="text/javascript" src="dom-event.js"></script>
+</html>

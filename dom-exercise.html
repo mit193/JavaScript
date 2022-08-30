@@ -1,0 +1,151 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        
+        <style>
+        #jumbo{
+			margin-top: 30px;
+		}
+		button{
+			margin-left: 10px;
+		}
+		h3{
+			background: #eee;
+			color:inherit;
+			width: 500px;
+		    height: 45px;
+		    padding: 10px;
+		    border-radius: 10px;
+		}
+		#mainContainer{
+			margin-bottom: 20px;
+		}
+		#border-div{
+			padding: 15px;
+			width: 400px;
+			height: 150px;
+			border-radius: 10px;
+		}
+		#firstDiv, #secondDiv{
+			width:200px;
+			border: 2px solid gray;
+			border-radius: 10px;
+			padding: 10px;
+		}
+		#div1-que6{
+			width:200px;
+			border: 2px solid gray;
+			border-radius: 10px;
+			padding: 10px;
+		}
+		#div2-que6{
+			width:200px;
+			border: 2px solid gray;
+			border-radius: 10px;
+			padding: 10px;
+		}
+
+        </style>
+    </head>
+    <body onload="display()">
+        <div class="container" id="mainContainer">
+            <div class="jumbotron" id="jumbo">
+                <h1>Dom Exercise</h1>
+                <p>hello! here you can find various example of <strong>JAVASCRIPT</strong> Dom</p>
+            </div>
+
+            <h3>Question 1</h3>
+            <p id="para">Cu decore electram ius, no nec modo autem. Quo clita iriure praesent at. Vix idque impetus no. Eu semper accumsan est, graeci vocent habemus ad per, eam gloriatur conceptam at. Eum te qualisque mnesarchum, cu sed tritani mandamus scriptorem.</p>
+
+            <select id="modify" onChange="q1()">
+                <option value="">Select Any One</option>
+                <option value="1">Make Invisible </option>
+                <option value="2">Change Color</option>
+                <option value="3">Make visible and change color</option>
+                <option value="4">default</option>
+            </select><br><br>
+
+            <h3>Question 2</h3>
+
+            <input type="text" id="firstText" placeholder ="Enter anything"><br><br>
+            <input type="text" id="secondText" placeholder =""><br><br>
+
+            <input type="button" class="btn btn-danger" onClick="que2()" value="ClickMe!"><br><br>
+
+            <h3>Question 4</h3>
+            <div id="border-div">
+                <input type="text" id="colorChange" placeholder="red or black"><br><br>
+
+                <input type="button" class="btn btn-primary" onClick="que4()" value="Change Color"><br><br>
+            </div>
+
+            <h3>Question 5</h3>
+            <input type="radio" name="que5" id="radio1">First Radio<br><br>
+
+            <input type="radio" name="que5" id="radio2">Second Radio<br><br>
+
+            <input type="text" id="text1" placeholder="Enter Something"><br><br>
+            <input type="text" id="text2" placeholder="Enter Something"><br><br>
+
+            <input type="button" class="btn btn-danger" onClick="que5()" value="Click Me!"><br><br>
+
+
+		    <h3>Question 6</h3>
+		    <div id="firstDiv" onchange = "que6()">
+			    <input type="radio" id="radioButton"> MyRadio <br><br>
+			    <input type="checkbox" id="checkBox"> MyCheckBox <br><br>
+			        <select id="dropDown">
+				        <option value="1"></option>
+				        <option value="2">Apple</option>
+				        <option value="3">Banana</option>
+				        <option value="4">Orange</option>
+				        <option value="5">Mango</option>
+			        </select>
+		    </div>
+		    <div id="secondDiv">
+			    <p id="p1"></p>
+			    <p id="p2"></p>
+			    <p id="p3"></p>
+		    </div>
+
+            <h3>Question 7</h3>
+		    <div id="div1-que11">
+			    <input type="text" id="text-que11"><br><br>
+
+			    <input type="radio" id="radio1-que11">Radio 1<br><br>
+			    <input type="radio" id="radio2-que11">Radio 2<br><br>
+
+			    <input type="checkbox" id="checkbox-que11">Check Box 1<br><br>
+
+			    <select id="selectOption">
+				    <option value=""></option>
+				    <option value="1">Apple</option>
+				    <option value="2">Banana</option>
+				    <option value="3">Orange</option>
+				    <option value="4">Mango</option>
+			    </select><br><br>
+
+			    <input type="button" id="btn-que11" class="btn btn-default" value="Submit" onclick="que7()">
+		    </div>
+		    <div id="div2-que11">
+			    <p id="p1-q11"></p>
+			    <p id="p2-q11"></p>
+			    <p id="p3-q11"></p>
+			    <p id="p4-q11"></p>
+			    <p id="p5-q11"></p>
+		    </div>
+		    <div>
+
+            <div>
+                <h3>Question 12</h3>
+                <img src="male1.jpg" height="200" width="200" alt="Minions image" title="This is image of two minions Kevin and Bob"><span id="image-span"></span><br><br>
+            
+                <input type="text" id="image-text" placeholder="Enter something" onchange="que8()">
+            </div>
+
+        </div>
+        <script type="text/javascript" src="exercise.js"></script>
+    </body>
+</html>
+
+
